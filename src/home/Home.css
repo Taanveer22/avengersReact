@@ -1,0 +1,89 @@
+body {
+  background: url("https://i.ibb.co/JB1y0X5/4690.jpg"),
+    linear-gradient(rgba(8, 2, 2, 0.6), rgba(165, 154, 154, 0.6));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color:white;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  border: 1px solid gray;
+}
+
+.photo {
+  width: 80px;
+  border-radius: 50px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-btn{
+    background-color: aqua;
+}
+
+.home-container{
+    display: flex;
+}
+
+.card-container {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+} */
+
+/* .container {
+  display: flex;
+  width: 800px;
+  color: white;
+} */
+
+/* .card {
+  width: 230px;
+  height: 290px;
+  border: 1px solid gray;
+} */
+
+
+
+/* .cart {
+  width: 300px;
+  border: 2px solid red;
+  text-align: center;
+} */
+
+  /* .price-container{
+    display: flex;
+    justify-content: space-around;
+  }
+   */
+  /* .card-select-btn{
+    width: 100%;
+    background-color:rgb(156, 137, 137);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+  } */
+
+  /* .done-btn{
+    padding: 10px 15px;
+    font-size: 17px;
+    border: none;
+    background-color: rgb(102, 236, 236);
+  } */

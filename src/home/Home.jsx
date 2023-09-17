@@ -6,6 +6,7 @@ import Cart from "../cart/Cart";
 const Home = () => {
   // 2nd
   const [allActors, setAllActors] = useState([]);
+
   // 7th
   const [selectedActors, setSelectedActors] = useState([]);
 
@@ -43,22 +44,23 @@ const Home = () => {
       selectedActors.forEach((item) => {
         count = count + item.salary;
       });
-      // console.log(count);
+
       // 18th remaining cost
       const totalRemaining = 20000 - count;
-      // console.log(totalRemaining);
 
-      // 20th
-      setRemaining(totalRemaining);
-      // 22th
-      setTotalCost(count);
+      // 27th last condition checking
+      if (count > 20000) {
+        return alert("money has been finished");
+      } else {
+        // 20th
+        setRemaining(totalRemaining);
+        // 22th
+        setTotalCost(count);
 
-      setSelectedActors([...selectedActors, actor]);
+        setSelectedActors([...selectedActors, actor]);
+      }
     }
   };
-
-  // console.log(selectedActors);
-  // console.log(setSelectedActors);
 
   return (
     <div>
@@ -79,8 +81,8 @@ const Home = () => {
                   </small>
                 </p>
                 <div className="info">
-                  <p>salary: {actor.salary}</p>
-                  <p>{actor.role}</p>
+                  <p>salary: {actor.salary} $</p>
+                  <p>role: {actor.role}</p>
                 </div>
                 {/* 6th */}
                 <button

@@ -1,23 +1,23 @@
 import "./Cart.css";
-// props type validation
+// props type import
 import PropTypes from "prop-types";
 
 // 11th selectedActors passing
 // 24th remaining , totalcost passing
 const Cart = ({ selectedActors, remaining, totalCost }) => {
-//   console.log(selectedActors);
   return (
-      <div>
-          
+    <div>
       {/* 13th total actors selectd */}
-          <h5>total actors: {selectedActors.length}</h5>
+      <h1>selected artist numbers: {selectedActors.length}</h1>
 
-          {/* 25th */}
-          <h4>remaining: {remaining}</h4>
-          
-          {/* 26th */}
-          <h3>total cost: {totalCost}</h3>
-          
+      {/* 25th */}
+      <h1>remaining budget: {remaining}</h1>
+
+      {/* 26th */}
+      <h1>total cost: {totalCost}</h1>
+
+      <h2>selected artist names: </h2>
+
       {/* 12th cart item actor mapping data showed */}
       {selectedActors.map((actor) => (
         <li key={actor.id}>{actor.name}</li>
@@ -26,11 +26,10 @@ const Cart = ({ selectedActors, remaining, totalCost }) => {
   );
 };
 
-
-// prop types validation
+// prop types declared
 Cart.propTypes = {
-    selectedActors: PropTypes.array,
-    remaining: PropTypes.number,
-    totalCost: PropTypes.number
-}
+  selectedActors: PropTypes.array,
+  remaining: PropTypes.number,
+  totalCost: PropTypes.number,
+};
 export default Cart;
